@@ -1,0 +1,24 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "firstblinky/firstblinky"
+		},
+		{
+			"path": "httpclient"
+		},
+		{
+			"path": "helloword"
+		},
+		{
+			"path": "ntpclient"
+		},
+		{
+			"path": "Led16x2"
+		}
+	],
+	"settings": {
+	}
+}
