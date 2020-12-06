@@ -33,7 +33,7 @@ now = time.localtime()
 text = str(now[2])+ '/' +str(now[1])+ '/' + str(now[0])
 lcd.putstr(text) 
 lcd.move_to(0,1)
-text = str(now[3])+ ':' + str(now[4])
+text = str(now[3])+ ':' + str(now[4])+ ':' + str(now[5])
 lcd.putstr(text) 
 station.disconnect()
 

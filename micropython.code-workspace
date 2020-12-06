@@ -17,8 +17,27 @@
 		},
 		{
 			"path": "Led16x2"
+		},
+		{
+			"path": "intell"
+		},
+		{
+			"path": "uartread"
 		}
 	],
 	"settings": {
+		"python.linting.enabled": true,
+		"python.linting.pylintEnabled": true,
+		"python.languageServer": "Microsoft",
+		"python.jediEnabled": false,
+		"python.autoComplete.extraPaths": [
+			"/home/henryd/Downloads/Python/micropython-stubs-master/stubs/esp8266_v1_11"
+		],
+		"python.autoComplete.typeshedPaths": [
+			"/home/henryd/Downloads/Python/micropython-stubs-master/stubs/esp8266_v1_11"
+		],
+		"python.analysis.typeshedPaths": [
+			"/home/henryd/Downloads/Python/micropython-stubs-master/stubs/esp8266_v1_11"
+		]	
 	}
 }

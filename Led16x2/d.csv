@@ -1,0 +1,17 @@
+21.6 , 60.2
+21.6 , 59.9
+Traceback (most recent call last):
+  File "<stdin>", line 32, in <module>
+KeyboardInterrupt: 
+>
+MicroPython v1.13 on 2020-09-11; ESP module with ESP8266
+Type "help()" for more information.
+>>> 
+>>> 
+>>> 
+raw REPL; CTRL-B to exit
+>21.6 , 59.9
+21.7 , 59.8
+21.6 , 60.0
+21.6 , 59.8
+21.6 , 59.7
