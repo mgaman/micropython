@@ -10,19 +10,16 @@
 			"path": "httpclient"
 		},
 		{
-			"path": "helloword"
-		},
-		{
 			"path": "ntpclient"
 		},
 		{
 			"path": "Led16x2"
 		},
 		{
-			"path": "intell"
+			"path": "uartread"
 		},
 		{
-			"path": "uartread"
+			"path": "irq"
 		}
 	],
 	"settings": {
