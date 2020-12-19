@@ -16,7 +16,7 @@
     ]
   },
   "tools": {
-    "ampy": "/home/henryd/.platformio/penv/bin/rshell",
+    "ampy": "/home/henryd/.platformio/penv/bin/ampy",
     "rshell": ""
   }
 }
