@@ -20,6 +20,21 @@
 		},
 		{
 			"path": "irq"
+		},
+		{
+			"path": "uart1"
+		},
+		{
+			"path": "uartpassthru"
+		},
+		{
+			"path": "mypackage"
+		},
+		{
+			"path": "lib/python_lcd"
+		},
+		{
+			"path": "python_lcd_test"
 		}
 	],
 	"settings": {
@@ -28,13 +43,16 @@
 		"python.languageServer": "Microsoft",
 		"python.jediEnabled": false,
 		"python.autoComplete.extraPaths": [
-			"/home/henryd/Downloads/Python/micropython-stubs-master/stubs/esp8266_v1_11"
+			"/home/henryd/Downloads/Python/micropython-stubs-master/stubs/esp8266_v1_11",
+			"/home/henryd/Downloads/Python/micropython-stubs-master/stubs/esp32_1_12_0"
 		],
 		"python.autoComplete.typeshedPaths": [
-			"/home/henryd/Downloads/Python/micropython-stubs-master/stubs/esp8266_v1_11"
+			"/home/henryd/Downloads/Python/micropython-stubs-master/stubs/esp8266_v1_11",
+			"/home/henryd/Downloads/Python/micropython-stubs-master/stubs/esp32_1_12_0"
 		],
 		"python.analysis.typeshedPaths": [
-			"/home/henryd/Downloads/Python/micropython-stubs-master/stubs/esp8266_v1_11"
+			"/home/henryd/Downloads/Python/micropython-stubs-master/stubs/esp8266_v1_11",
+			"/home/henryd/Downloads/Python/micropython-stubs-master/stubs/esp32_1_12_0"
 		]	
 	}
 }

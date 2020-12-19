@@ -14,6 +14,7 @@ while not connected:
     sleep(0.1)
 config = station.ifconfig()
 
+
 print('IP address: '+config[0])
 
 response = urequests.get(settings.url)
