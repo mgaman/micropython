@@ -1,3 +1,10 @@
-# This is script that run when device boot up or wake from sleep.
+import network
+#import esp
+#import webrepl
 
+ap = network.WLAN(network.AP_IF)
+ap.active(True)
+ap.config(essid='micropythonesp32')
 
+#esp.osdebug(None)
+#webrepl.start()

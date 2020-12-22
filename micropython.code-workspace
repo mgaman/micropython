@@ -35,6 +35,9 @@
 		},
 		{
 			"path": "python_lcd_test"
+		},
+		{
+			"path": "mqttclient"
 		}
 	],
 	"settings": {
