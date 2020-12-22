@@ -175,7 +175,7 @@ class MQTTClient:
         op = res[0]
         if op & 0xf0 != 0x30:
             return op
-        sz = self._recv_len()from mqtt import MQTTClient
+        sz = self._recv_len()
 
         topic_len = self.sock.read(2)
         topic_len = (topic_len[0] << 8) | topic_len[1]
