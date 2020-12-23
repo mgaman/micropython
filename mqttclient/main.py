@@ -8,10 +8,13 @@
 # available at https://www.pycom.io/opensource/licensing
 #
 
-from mqtt import MQTTClient
-import network, machine, os, time
+#from mqtt import MQTTClient
+#import mystuff
+from mystuff import MQTTClient
+import mystuff.settings
 
-import settings
+import network, machine, os, time
+from sys import platform
 
 def settimeout(duration): 
     pass
@@ -26,8 +29,14 @@ def msgcallback(topic,payload):
 wlan = network.WLAN(network.STA_IF)
 wlan.active(True)
 # configure AFTER active
-wlan.config(dhcp_hostname='WemosD1R32')
-wlan.connect(settings.ssid,settings.password)
+hostname = 'unknownpy'
+if platform == 'esp32':
+    hostname = 'WemosD1R32'
+elif platform == 'esp8266':
+    hostname = 'NodeMCU'   # actually ignored
+
+wlan.config(dhcp_hostname=hostname)
+wlan.connect(mystuff.settings.ssid,mystuff.settings.password)
 
 connected = False
 while not connected:
@@ -38,7 +47,7 @@ config = wlan.ifconfig()
 print(config[0])
 
 print("Connected to Wifi\n")
-client = MQTTClient("demo", settings.mttqBroker, port=1883, user = settings.mqttUser, password = settings.mqttPassword)
+client = MQTTClient("demo", mystuff.settings.mttqBroker, port=1883, user = mystuff.settings.mqttUser, password = mystuff.settings.mqttPassword)
 client.settimeout = settimeout
 client.connect()
 # Must set callback before subscribe 
@@ -49,10 +58,10 @@ onoff = True
 while True:
     if onoff:
         print("Sending ON")
-        client.publish("/lights", "ON")
+        client.publish("lights", "ON")
     else:
         print("Sending OFF")
-        client.publish("/lights", "OFF")
+        client.publish("lights", "OFF")
     time.sleep(1)
     onoff = not onoff
     client.check_msg()

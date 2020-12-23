@@ -1,5 +1,5 @@
 
-from python_lcd.lcd_api import LcdApi
+from mystuff.lcd_api import LcdApi
 from machine import I2C
 from time import sleep_ms
 

@@ -3,7 +3,8 @@
 
 from time import sleep_ms, ticks_ms
 from machine import I2C, Pin
-import python_lcd
+#import mystuff
+from mystuff import I2cLcd
 from sys import platform
 
 # The PCF8574 has a jumper selectable address: 0x20 - 0x27
