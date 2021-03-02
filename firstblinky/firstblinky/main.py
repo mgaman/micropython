@@ -7,5 +7,5 @@ while True:
     sleep(1)
     led.on()
     sleep(1)
-    print ('blink')
+    print ('blinky')
  
